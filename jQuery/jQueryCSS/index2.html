@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        #icon-sun {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <h1 class="text">Hello world!!</h1>
+    <i class="fa-regular fa-sun" id="icon-sun"></i>
+    <!-- <i class="fa-regular fa-moon"></i> -->
+
+
+    <script>
+
+
+        // $(document).ready( function() {
+
+        //     $('#icon-sun').click( function() {
+
+
+        //         if ( $(this).hasClass() == 'fa-sun') {
+        //             $(this).attr('class', 'fa-regular fa-moon');
+
+
+        //         }
+        //         else {
+        //             $(this).attr('class', 'fa-regular fa-sun');
+
+        //         }
+
+
+        //     })
+
+
+
+        // })
+
+
+        $(document).ready(function() {
+            $('#icon-sun').click(function() {
+                // Check if the icon currently has the 'fa-sun' class
+                if ($(this).hasClass('fa-sun')) {
+                    // Change to 'fa-moon' class
+                    $(this).attr('class', 'fa-regular fa-moon');
+                    $(this).css('color', 'white');
+                    $('body').css('background-color', 'black');
+                    $('.text').css('color', 'white');
+                } else {
+                    // Otherwise, change to 'fa-sun' class
+                    $(this).attr('class', 'fa-regular fa-sun');
+                    $(this).css('color', 'black');
+                    $('body').css('background-color', 'white');
+                    $('.text').css('color', 'black')
+                }
+            });
+        });
+
+
+    </script>
+
+
+
+</body>
+</html>

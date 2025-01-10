@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle method in JQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <style>
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        img {
+            height: 80vh;
+            width: 30vw;
+        }
+
+        #on {
+            display: none;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+
+    <img id="off" src="./bulb-off.png" alt="Bulb Off">
+    <img id="on" src="./bulb-on.png" alt="">
+
+
+    <button id="btn">OFF</button>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#btn').click(function() {
+
+                // $('#off').toggle()
+                // $('#on').toggle()
+
+                // if ($('#btn').text() == 'OFF') {
+
+                //     $('#btn').text('ON');
+                // }
+                // else {
+                //     $('#btn').text('OFF');
+
+                // }
+            })
+        })
+
+    </script>
+
+</body>
+</html>
